@@ -2,10 +2,14 @@ h2 {
     color: red;
 }
 
-.crimson {
+h2 + p {
     color: crimson;
     font-style: italic;
     font-weight: bold;
+}
+
+ul ~ p {
+    font-style: italic;
 }
 
 .container {
