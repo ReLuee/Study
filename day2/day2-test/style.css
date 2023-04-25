@@ -17,6 +17,7 @@ input {
 }
 
 div p {
+    display: block;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
