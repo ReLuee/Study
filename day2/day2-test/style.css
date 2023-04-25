@@ -1,0 +1,25 @@
+h2 {
+    color: red;
+}
+
+.crimson {
+    color: crimson;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.container {
+    background-color: #f0f0f0;
+}
+
+input {
+    background-color: #f4faffed;
+}
+
+div p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    font-style: italic;
+}
