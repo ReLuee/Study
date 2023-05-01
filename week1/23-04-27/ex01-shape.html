@@ -42,11 +42,11 @@
     <script>
 
         // 직각삼각형
-        function rightTriangle(x) {
+        function rightTriangle(height) {
             console.clear();
-            for (let i = 0; i < x; i++) {
-                let row = "*";
-                for (let j = 0; j < i; j++) {
+            for (let i = 0; i < height; i++) {
+                let row = "";
+                for (let j = 0; j < i + 1; j++) {
                     row += "*";
                 }
                 console.log(row);
@@ -54,11 +54,11 @@
         }
 
         // 정사각형
-        function square(x) {
+        function square(height) {
             console.clear();
-            for (let i = 0; i < x; i++) {
-                let row = "*";
-                for (let j = 0; j < x - 1; j++) {
+            for (let i = 0; i < height; i++) {
+                let row = "";
+                for (let j = 0; j < height; j++) {
                     row += "*";
                 }
                 console.log(row);
@@ -66,11 +66,11 @@
         }
 
         // 삼각형
-        function triangle(x) {
+        function triangle(height) {
             console.clear();
-            for (let i = 0; i < x; i++) {
+            for (let i = 0; i < height; i++) {
                 let row = "";
-                for (let j = 0; j < (x - i - 1); j++) {
+                for (let j = 0; j < (height - i - 1); j++) {
                     row += " ";
                 }
                 for (let k = 0; k < ((i * 2) + 1); k++) {
@@ -81,11 +81,11 @@
         }
 
         // 역삼각형
-        function reverseTriangle(x) {
+        function reverseTriangle(height) {
             console.clear();
-            for (let i = x; i >= 0; i--) {
+            for (let i = height; i >= 0; i--) {
                 let row = "";
-                for (let j = i; j < x; j++) {
+                for (let j = i; j < height; j++) {
                     row += " ";
                 }
                 for (let k = 1; k <= ((i * 2) - 1); k++) {
@@ -96,12 +96,12 @@
         }
 
         // 다이아몬드
-        function diamond(x) {
+        function diamond(height) {
             console.clear();
-            if (x % 2 === 0) {  // 입력값이 짝수일경우
-                for (let i = 0; i < x / 2; i++) {
+            if (height % 2 === 0) {  // 입력값이 짝수일경우
+                for (let i = 0; i < height / 2; i++) {
                     let row = "";
-                    for (let j = 0; j < (x - i - 1); j++) {
+                    for (let j = 0; j < (height - i - 1); j++) {
                         row += " ";
                     }
                     for (let k = 0; k < ((i * 2) + 1); k++) {
@@ -109,9 +109,9 @@
                     }
                     console.log(row);
                 }
-                for (let i = (x / 2) - 1; i >= 0; i--) {
+                for (let i = (height / 2) - 1; i >= 0; i--) {
                     let row = "";
-                    for (let j = i; j < x; j++) {
+                    for (let j = i; j < height; j++) {
                         row += " ";
                     }
                     for (let k = 1; k <= ((i * 2) - 1); k++) {
@@ -120,9 +120,9 @@
                     console.log(row);
                 }
             } else {    // 입력값이 홀수일경우
-                for (let i = 0; i < x / 2; i++) {
+                for (let i = 0; i < height / 2; i++) {
                     let row = "";
-                    for (let j = 0; j < (x - i - 1); j++) {
+                    for (let j = 0; j < (height - i - 1); j++) {
                         row += " ";
                     }
                     for (let k = 0; k < ((i * 2) + 1); k++) {
@@ -130,9 +130,9 @@
                     }
                     console.log(row);
                 }
-                for (let i = (x / 2) - 0.5; i >= 0; i--) {
+                for (let i = (height / 2) - 0.5; i >= 0; i--) {
                     let row = "";
-                    for (let j = i; j < x; j++) {
+                    for (let j = i; j < height; j++) {
                         row += " ";
                     }
                     for (let k = 1; k <= ((i * 2) - 1); k++) {
