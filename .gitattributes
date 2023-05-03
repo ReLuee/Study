@@ -1,0 +1,6 @@
+*.java     -text
+*.txt      -text
+*.md       -text
+*.html     -text
+*.css      -text
+*.js       -text
