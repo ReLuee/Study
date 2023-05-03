@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class TimesTableController {
 
-	public static int inputNum() { 	// ÀÔ·Â°ª ¹Þ¾Æ¿À±â
+	public static int inputNum() { 	// ìž…ë ¥ê°’ ë°›ê¸°
 
 		Scanner sc = new Scanner(System.in);
 

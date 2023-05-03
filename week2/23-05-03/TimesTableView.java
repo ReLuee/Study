@@ -4,9 +4,9 @@ public class TimesTableView {
 
 	public static void main(String[] args) {
 
-		System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä(1~999)");
+		System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”(1~999)");
 
-		TimesTableModel.Multiplication(); 	// °è»ê (Model)
+		TimesTableModel.Multiplication(); 	// ê³„ì‚° (Model)
 
 	}
 

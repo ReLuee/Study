@@ -10,19 +10,19 @@ public class TimesTableModel {
 
 			int num = TimesTableController.inputNum();
 
-			if (num < 1 || num > 999) { // ÀÔ·Â¹üÀ§Á¦ÇÑ
-				System.err.println("1¿¡¼­ 999 »çÀÌÀÇ Á¤¼ö¸¸ ÀÔ·ÂÇÏ¼¼¿ä.");
+			if (num < 1 || num > 999) { // ì…ë ¥ë²”ìœ„ì œí•œ
+				System.err.println("1ì—ì„œ 999 ì‚¬ì´ì˜ ì •ìˆ˜ë§Œ ì…ë ¥í•˜ì„¸ìš”.");
 				return;
 			}
 
-			System.out.println(num + "´ÜÀ» Ãâ·ÂÇÕ´Ï´Ù.");
+			System.out.println(num + "ë‹¨ì„ ì¶œë ¥í•©ë‹ˆë‹¤.");
 
-			for (int i = 1; i < 10; i++) {	// °è»ê
+			for (int i = 1; i < 10; i++) {	// ê³„ì‚°
 				System.out.println(num + " x " + i + " = " + (num * i));
 			}
 
-		} catch (InputMismatchException e) {	// ¿¹¿ÜÃ³¸®
-			System.err.println("¿Ã¹Ù¸¥ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		} catch (InputMismatchException e) {	// ì˜ˆì™¸ì²˜ë¦¬
+			System.err.println("ì •ìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤.");
 			return;
 		}
 	}
